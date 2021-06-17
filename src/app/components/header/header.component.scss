@@ -1,0 +1,26 @@
+@import "../../theme";
+
+.img-container {
+  height: 175px;
+  .logo {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+
+  color: white;
+  background: black;
+
+  a {
+    color: white;
+  }
+
+  .hand-writing {
+    font-size: 25px;
+  }
+}

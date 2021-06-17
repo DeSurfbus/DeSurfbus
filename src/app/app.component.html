@@ -1,0 +1,149 @@
+<app-header (isSticky)="isSticky($event)"></app-header>
+
+<main [ngStyle]="{ 'margin-top': isStickyToolbar === true ? '71px' : '15px' }">
+  <section class="banner_intro"></section>
+
+  <section class="wrapper">
+    <div class="about" id="about">
+      <h2>De surfbus</h2>
+      <p>
+        De Surfbus is een rijdende surfschool. Vanuit de Surfbus geven wij
+        surflessen op de beste spots van Nederland! Bij de Surfbus draait het
+        allemaal om kwaliteit en plezier! Surfles van De Surfbus is een
+        ervaring! Vooraf een lekker bakje vers gezette koffie of thee, lekker
+        surfen en achteraf napraten bij de bus of op het strand.… Wat wil je nog
+        meer?
+      </p>
+    </div>
+
+    <div class="surfles-1-img"></div>
+
+    <div class="leer-surfen">
+      <h2>Leer surfen</h2>
+      <p>
+        Bij de Surfbus leer je van ervaren en gediplomeerde surfinstructeurs je
+        eerste keer op je surfboard staan, je eerste groene golf pakken of
+        misschien wel je eerste keer noseriden. De Surfbus biedt surflessen in
+        kleine groepjes van maximaal 4 personen, hierdoor is er altijd veel
+        aandacht voor de ontwikkeling van jouw surfskills. Om de beste kwaliteit
+        te kunnen bieden in een surfles zal je ingedeeld worden met andere
+        surfers die hetzelfde niveau hebben als jij.
+      </p>
+    </div>
+
+    <div class="surfles-3-img"></div>
+
+    <div class="beste-locates">
+      <h2>Beste locaties</h2>
+      <p>
+        Leer surfen op de beste surf locaties van Nederland! Omdat de Surfbus
+        mobiel is en niet vast zit een een locatie worden de surflessen gegeven
+        op de spots waar op dat moment de beste golven zijn voor jouw niveau.
+        <br />
+        <br />
+        Ook kan er rekening gehouden worden met jouw woonplaats en kan de
+        surfles bij jou in de buurt plaatsvinden.
+      </p>
+    </div>
+
+    <div class="surfles-2-img"></div>
+    <div class="surf-action-1-img"></div>
+
+    <div class="surfinstructeur">
+      <h2>Instructeur</h2>
+
+      <p>
+        Hoi ik ben Casper, jullie surfinstructeur! Ik heb bijna de hele wereld
+        gezien en op de mooiste plekken gesurfd. Toch blijft Wijk aan Zee een
+        van mijn favoriete Surf spots. De golven, de sfeer, de zeehondjes, de
+        mensen… Ik heb jaren ervaring als surfinstructeur in Australië en in
+        Nederland.
+
+        <br /><br />
+        Een bijdrage kunnen leveren aan iemands eerste surfervaring en bijdragen
+        aan de ontwikkeling van iemands surfs skills is voor mij het mooiste wat
+        er is. Zelf heb ik door de jaren heen al op heel wat surfboards gesurfd.
+        De laatste jaren ben ik mij voornamelijk gaan specialiseren in
+        Longboarden.
+      </p>
+    </div>
+
+    <div class="surfinstructeur-img"></div>
+    <div class="walk-img"></div>
+
+    <div class="surfles-boeken" id="book">
+      <article>
+        <h2>Een Surfles boeken</h2>
+        <p>
+          Wil je een surfles boeken? Neem dan contact op via onderstaand
+          emailadres of telefoonnummer.
+          <!-- <a href="mailto:info@surfbus.nl">emailadres</a> of
+          <a href="tel:0031617143385"> telefoonnummer</a>.  -->
+          Laat in de e-mail even weten wanneer je een les wil, met hoeveel
+          personen en in welke regio je woont. De Surfbus neemt dan zo snel
+          mogelijk contact met je op.
+        </p>
+      </article>
+
+      <br />
+      <article>
+        <p>
+          <span class="sub-header">Prijzen</span>
+          <br />
+          Alle surflessen duren 2 uur, waarvan minimaal 1,5 uur in het water.
+        </p>
+
+        <ul>
+          <li>Surfles incl. materiaal: 39 euro</li>
+          <li>Surfles zonder materiaal: 34 euro</li>
+          <li>3 Rittenkaart Surfles: 105 euro</li>
+          <li>5 Rittenkaart Surfles: 160 euro</li>
+          <li>10 Rittenkaart Surfles: 280 euro</li>
+          <li>
+            Privé Surfles incl. materiaal: 100 euro <br />
+            (voor 1 of 2 personen)
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="surfbus-img"></div>
+
+    <div class="contact">
+      <img
+        class="surfbus-logo"
+        width="100%"
+        src="../assets/LOGO_BLACK.png"
+        alt="surfbus logo"
+      />
+      <div class="contact_icons">
+        <a href="mailto:info@surfbus.nl"
+          ><mat-icon [inline]="true">email</mat-icon></a
+        >
+        <a href="tel:0031617143385"
+          ><mat-icon [inline]="true">phone</mat-icon></a
+        >
+        <a target="new" href="https://www.facebook.com/casper.buis"
+          ><mat-icon [inline]="true">facebook</mat-icon></a
+        >
+        <a
+          target="new"
+          href="https://www.instagram.com/desurfbus
+        "
+        >
+          <img
+            class="instagram-icon"
+            src="../assets/instagram.png"
+            alt="instagram logo"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer>
+  <mat-icon div class="scroll-up_btn" (click)="onClickScroll('top')"
+    >expand_less</mat-icon
+  >
+</app-footer>

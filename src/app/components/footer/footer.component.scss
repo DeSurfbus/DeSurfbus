@@ -1,0 +1,75 @@
+@import "../../theme";
+
+footer {
+  padding: 20px;
+  background-color: black;
+
+  color: $text_white;
+
+  .footer_container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+
+    .footer-item {
+      padding: 20px;
+      p {
+        color: $text_color_light;
+        font-size: 15px;
+      }
+
+      ul {
+        color: $text_color_light;
+        margin-top: 15px;
+        font-size: 15px;
+
+        li {
+          margin-bottom: 10px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  ///layout
+  @media (min-width: 620px) {
+    .footer_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item_one {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .footer-item_two {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .footer-item_three {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .footer_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item_one {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .footer-item_two {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .footer-item_three {
+      grid-column: 3;
+      grid-row: 1;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<header>
+  <div id="top"></div>
+  <div class="img-container">
+    <img
+      class="logo"
+      src="../assets/de_surfbus_logo.png"
+      width="200px"
+      alt="Logo Surfschool"
+    />
+  </div>
+  <div #stickyToolbar [class.sticky]="sticky">
+    <mat-toolbar color="primary">
+      <div class="container">
+        <button
+          [matMenuTriggerFor]="menu"
+          mat-icon-button
+          aria-label="Menu icon"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="hand-writing">mobiele surfschool</span>
+
+        <span class="spacer"></span>
+
+        <!-- <button mat-icon-button aria-label="Favorite icon">
+        <mat-icon>favorite</mat-icon>
+      </button> -->
+
+        <a
+          href="whatsapp://send?text=https://surfbus-b10cd.web.app"
+          data-text="De surfbus!"
+          class="wa_btn wa_btn_s"
+        >
+          <button mat-icon-button aria-label="Share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+        </a>
+      </div>
+    </mat-toolbar>
+  </div>
+</header>
+
+<mat-menu #menu="matMenu">
+  <a (click)="onClickScroll('about')">
+    <button mat-menu-item>
+      <mat-icon>local_shipping</mat-icon>
+      <span>De Surfbus</span>
+    </button>
+  </a>
+  <a (click)="onClickScroll('book')">
+    <button mat-menu-item>
+      <mat-icon>date_range</mat-icon>
+      <span>Een Surfles boeken</span>
+    </button>
+  </a>
+
+  <mat-divider></mat-divider>
+
+  <a href="tel:0031617143385">
+    <button mat-menu-item>
+      <mat-icon>phone</mat-icon>
+      <span>0617143385</span>
+    </button>
+  </a>
+
+  <a href="mailto:info@surfbus.nl">
+    <button mat-menu-item>
+      <mat-icon>email</mat-icon>
+      <span>info@surfbus.nl</span>
+    </button>
+  </a>
+
+  <mat-divider></mat-divider>
+
+  <a target="new" href="https://www.facebook.com/casper.buis">
+    <button mat-menu-item>
+      <mat-icon>facebook</mat-icon>
+      <span>Volg de Surfbus</span>
+    </button>
+  </a>
+</mat-menu>

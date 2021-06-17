@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./app/theme";
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+  font-weight: 200;
+  border-radius: none !important;
+}
+.attention {
+  color: $base_color;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+  width: 100%;
+}
