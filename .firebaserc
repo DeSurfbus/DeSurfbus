@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "surfbus-b10cd": {
+      "hosting": {
+        "surfbus": [
+          "surfbus-b10cd"
+        ]
+      }
+    }
+  }
+}
