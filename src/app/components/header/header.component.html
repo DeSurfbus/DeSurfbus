@@ -41,7 +41,7 @@
 </header>
 
 <mat-menu #menu="matMenu">
-  <a (click)="onClickScroll('about')">
+  <!-- <a (click)="onClickScroll('about')">
     <button mat-menu-item>
       <mat-icon>local_shipping</mat-icon>
       <span>De Surfbus</span>
@@ -52,9 +52,9 @@
       <mat-icon>date_range</mat-icon>
       <span>Een Surfles boeken</span>
     </button>
-  </a>
+  </a> -->
 
-  <mat-divider></mat-divider>
+  <!-- <mat-divider></mat-divider> -->
 
   <a href="tel:0031617143385">
     <button mat-menu-item>
@@ -63,18 +63,22 @@
     </button>
   </a>
 
-  <a href="mailto:info@surfbus.nl">
+  <a href="mailto:desurfbus@gmail.com">
     <button mat-menu-item>
       <mat-icon>email</mat-icon>
-      <span>info@surfbus.nl</span>
+      <span>desurfbus@gmail.com</span>
     </button>
   </a>
 
   <mat-divider></mat-divider>
 
-  <a target="new" href="https://www.facebook.com/desurfbus">
+  <a target="new" href="https://www.instagram.com/desurfbus">
     <button mat-menu-item>
-      <mat-icon>facebook</mat-icon>
+      <img
+        class="instagram-icon"
+        src="../assets/instagram.svg"
+        alt="instagram logo"
+      />
       <span>Volg de Surfbus</span>
     </button>
   </a>

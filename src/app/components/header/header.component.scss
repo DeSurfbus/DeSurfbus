@@ -8,6 +8,14 @@
   }
 }
 
+.instagram-icon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0; /* Sets the sticky toolbar to be on top */
@@ -22,5 +30,11 @@
 
   .hand-writing {
     font-size: 25px;
+  }
+}
+
+.wa_btn {
+  @media (min-width: 620px) {
+    display: none;
   }
 }
