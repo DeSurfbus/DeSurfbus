@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +11,12 @@ export class AppComponent {
   constructor(private viewportScroller: ViewportScroller) {}
   title = 'surfbus';
 
-  onClickScroll(elementId: string) {
-    this.viewportScroller.scrollToAnchor(elementId);
-  }
-
   isSticky(value) {
     this.isStickyToolbar = value;
+  }
+
+  onClickScroll(elementId: string) {
+    this.viewportScroller.setOffset(() => [0, 64]);
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 }

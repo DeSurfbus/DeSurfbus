@@ -1,4 +1,7 @@
-<app-header (isSticky)="isSticky($event)"></app-header>
+<app-header
+  (isSticky)="isSticky($event)"
+  (elementId)="onClickScroll($event)"
+></app-header>
 
 <main [ngStyle]="{ 'margin-top': isStickyToolbar === true ? '71px' : '15px' }">
   <section class="banner_intro"></section>

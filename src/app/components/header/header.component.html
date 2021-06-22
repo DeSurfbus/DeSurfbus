@@ -12,6 +12,7 @@
     <mat-toolbar color="primary">
       <div class="container">
         <button
+          #menuBtn
           [matMenuTriggerFor]="menu"
           mat-icon-button
           aria-label="Menu icon"
@@ -41,7 +42,7 @@
 </header>
 
 <mat-menu #menu="matMenu">
-  <!-- <a (click)="onClickScroll('about')">
+  <a (click)="onClickScroll('about')">
     <button mat-menu-item>
       <mat-icon>local_shipping</mat-icon>
       <span>De Surfbus</span>
@@ -52,9 +53,9 @@
       <mat-icon>date_range</mat-icon>
       <span>Een Surfles boeken</span>
     </button>
-  </a> -->
+  </a>
 
-  <!-- <mat-divider></mat-divider> -->
+  <mat-divider></mat-divider>
 
   <a href="tel:0031617143385">
     <button mat-menu-item>

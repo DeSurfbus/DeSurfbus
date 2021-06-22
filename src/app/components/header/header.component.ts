@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -9,6 +8,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-header',
@@ -20,7 +20,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   toolbarPosition: any;
 
   @ViewChild('stickyToolbar') stickyToolbar: ElementRef;
+
+  @ViewChild('menuBtn', { read: MatMenuTrigger })
+  protected menuBtn: MatMenuTrigger;
+
   @Output() isSticky = new EventEmitter<boolean>();
+  @Output() elementId = new EventEmitter<string>();
 
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
@@ -33,13 +38,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       this.sticky = false;
     }
   }
-  constructor(private viewportScroller: ViewportScroller) {}
 
   ngOnInit(): void {}
 
   onClickScroll(elementId: string) {
-    this.viewportScroller.setOffset(() => [0, 64]);
-    this.viewportScroller.scrollToAnchor(elementId);
+    this.menuBtn.closeMenu();
+
+    this.elementId.emit(elementId);
   }
 
   ngAfterViewInit() {
